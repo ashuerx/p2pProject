@@ -1,0 +1,74 @@
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.h80 {
+  height: 80px;
+}
+.h80 .lineH li a {
+  line-height: 48px;
+  font-size: 16px;
+}
+.h80 .lineH li a:hover {
+  color: #6161f3;
+  background: #eee;
+}
+.navbar-inverse .navbar-nav li a {
+  color: white;
+}
+.navbar-inverse .navbar-nav li a:hover {
+  color: #4f4ff5;
+}
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+.navbar-inverse .navbar-brand span {
+  font-size: 24px;
+  font-style: italic;
+  padding-left: 10px;
+}
+.jumbotron {
+  margin-bottom: 0;
+}
+.jumbotron .pSize p {
+  font-size: 14px;
+}
+.jumbotron .imgSize p {
+  font-size: 14px;
+}
+.jumbotron .imgSize p img {
+  padding-top: 20px;
+  width: 160px;
+  height: 70px;
+}
+.jumbotron .sizeImg p {
+  font-size: 14px;
+}
+.jumbotron .sizeImg p img {
+  padding-top: 20px;
+  width: 160px;
+  height: 160px;
+}
+.invest {
+  padding-bottom: 40px;
+}
+.invest h4 {
+  margin: 30px 0;
+}
+.invest div {
+  color: grey;
+}
+.invest div .paddingLeft {
+  padding-left: 30px;
+}
+.invest div .paddingLeft button {
+  width: 80px;
+  outline: none;
+}
+table {
+  margin-bottom: 60px !important;
+}
+table thead tr th {
+  font-size: 16px;
+  color: #a5a2a2;
+}

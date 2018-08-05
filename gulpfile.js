@@ -10,7 +10,7 @@ var rename=require("gulp-rename");
 var uglify=require("gulp-uglify");
 
 //配置less编译任务
-gulp.task("lestTask",function () {
+gulp.task("lessTask",function () {
 	gulp.src("src/less/*.less") 
 	.pipe(less({
         paths: [ path.join(__dirname, 'less', 'includes') ]
@@ -35,6 +35,8 @@ gulp.task("minCssTask",function () {
 	.pipe(gulp.dest("dist/css/")); 
 });
 
+
+
 //配置js压缩的任务
 gulp.task("minJsTask",function () {
 	gulp.src("src/javascript/*.js") 
@@ -47,7 +49,7 @@ gulp.task("minJsTask",function () {
 
 //开启观察者watch
 gulp.task("default",function () {
-	gulp.watch("src/less/*.less",["lestTask"]); 
+	gulp.watch("src/less/*.less",["lesslTask"]); 
 	gulp.watch("src/sass/*.scss",["sassTask"]); 
 	gulp.watch("dist/css/*.css",["minCssTask"]); 
 	gulp.watch("src/javascript/*.js",["minJsTask"]); 

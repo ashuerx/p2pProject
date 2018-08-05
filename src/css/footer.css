@@ -1,3 +1,6 @@
+.jumbotron {
+  margin-bottom: 0;
+}
 .jumbotron .pSize p {
   font-size: 14px;
 }

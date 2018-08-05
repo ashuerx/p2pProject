@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/index.css">
-    <!-- <link rel="stylesheet" href="./lib/fontawesome/css/fontawesome.min.css"> -->
+
 </head>
 
 <body>
