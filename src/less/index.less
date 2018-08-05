@@ -1,45 +1,7 @@
-@color:white;
-.navbar{
-    border-radius: 0px;
-    margin-bottom: 0px;
-   }
-   .h80{
-       height: 80px;
-     
-       .lineH{
-           li{
-            a{
-                line-height: 48px;
-                font-size: 16px;
-                &:hover{
-                   color:rgb(97, 97, 243);  
-                   }
-               }
-           }
-           
-       }
-   }
-   .navbar-inverse{
-    .navbar-nav{
-        li{
-           a{
-               color: @color;
-               &:hover{
-                color:rgb(79, 79, 245);  
-                }
-           }
-        }
-    }
-    .navbar-brand{
-        color: @color;
-        span{
-            font-size: 24px;
-            font-style: italic;
-            padding-left: 10px;
-        }
-       
-    } 
-}
+
+@import url('header.less');
+
+@import url('footer.less');
 //特色
 .flex{
     padding-top: 20px;
@@ -125,33 +87,4 @@
         }
     }
 }
-// 尾部
-.jumbotron{
-    .pSize{
-        p{
-            font-size: 14px;
-        }
-    }
-.imgSize{
-    p{
-      font-size: 14px;
-        img{
-            padding-top: 20px;
-            width: 160px;
-            height:70px;
-        }
-    }
-   }
-   .sizeImg{
-       p{
-        font-size: 14px;
-           img{
-               padding-top: 20px;
-            width: 160px;
-            height: 160px;
-           }
-       }
-     
-   }
-}
-
+ 
