@@ -1,0 +1,157 @@
+@color:white;
+.navbar{
+    border-radius: 0px;
+    margin-bottom: 0px;
+   }
+   .h80{
+       height: 80px;
+     
+       .lineH{
+           li{
+            a{
+                line-height: 48px;
+                font-size: 16px;
+                &:hover{
+                   color:rgb(97, 97, 243);  
+                   }
+               }
+           }
+           
+       }
+   }
+   .navbar-inverse{
+    .navbar-nav{
+        li{
+           a{
+               color: @color;
+               &:hover{
+                color:rgb(79, 79, 245);  
+                }
+           }
+        }
+    }
+    .navbar-brand{
+        color: @color;
+        span{
+            font-size: 24px;
+            font-style: italic;
+            padding-left: 10px;
+        }
+       
+    } 
+}
+//特色
+.flex{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .dflex{
+        display: flex;
+        padding: 0px;
+        margin-right:10px;
+        img{
+        // width: 70px;
+        height: 70px;
+        }
+       .padLeft{
+           margin-left: 10px;
+        h4{
+            font-weight: bold;
+        }
+     
+     }
+    }
+}
+//投资列表
+#invest,#article{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+@media all and (max-width: 620px){
+    .hide620{
+        display: none;
+    }
+}
+
+//公共的panel
+.panel{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+.panel-default{
+    border: none;
+    
+    &>.panel-heading{
+        background-color: transparent;
+        padding: 0px;
+        
+        display: flex;
+        justify-content: space-between;
+        
+        h1{
+            font-size: 24px;
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+            color: rgb(67, 67, 245);
+            font-weight: bold;
+            border-bottom: 3px solid rgb(107, 107, 240);
+        }
+        
+        p{
+            margin: 0px;
+            padding: 0px;
+            line-height: 60px;
+        }
+    }
+    
+    .panel-body{
+        
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            
+            li{
+                line-height: 26px;
+                border-bottom: dotted 1px #ccc;
+                
+                span{
+                    float: right;
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+// 尾部
+.jumbotron{
+    .pSize{
+        p{
+            font-size: 14px;
+        }
+    }
+.imgSize{
+    p{
+      font-size: 14px;
+        img{
+            padding-top: 20px;
+            width: 160px;
+            height:70px;
+        }
+    }
+   }
+   .sizeImg{
+       p{
+        font-size: 14px;
+           img{
+               padding-top: 20px;
+            width: 160px;
+            height: 160px;
+           }
+       }
+     
+   }
+}
+
