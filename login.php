@@ -29,7 +29,7 @@
 				    <input type="password" class="form-control" id="password1" name="password1" placeholder="请输入密码">
 				  </div>
 				
-				 <button type="submit" class="btn btn-danger">立即登录</button>
+				 <button type="submit" class="btn btn-danger">立即登录</button><a href="register.php">未注册,请先注册</a>
 				</form>
 			  </div>
 			</div>
