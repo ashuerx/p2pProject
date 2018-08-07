@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/css/borrow.css">
+    <link rel="stylesheet" href="./dist/css/min/borrow.min.css">
 </head>
 <body>
     <!-- 头部 -->

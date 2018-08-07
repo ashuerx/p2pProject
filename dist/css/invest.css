@@ -54,34 +54,26 @@
   width: 160px;
   height: 160px;
 }
-.row {
-  padding-top: 40px;
+.invest {
+  padding-bottom: 40px;
 }
-.row .panel-default .panel-heading {
-  background-color: #6af16a;
-  color: white;
-  font-size: 22px;
+.invest h4 {
+  margin: 30px 0;
 }
-.row .panel-default .bg1 {
-  background-color: orange;
-}
-.row .panel-default .bg2 {
-  background-color: #6161db;
-}
-.row .panel-default .panel-body {
-  background: #eee;
-}
-.row .panel-default .panel-body .pSize {
-  font-size: 16px;
-}
-.row .panel-default .panel-body .pColor {
+.invest div {
   color: grey;
 }
-.row .panel-default .panel-body ul li {
-  list-style-image: url("../../dist/images/listyle.png");
+.invest div .paddingLeft {
+  padding-left: 30px;
 }
-.row .panel-default .panel-body button {
-  margin-left: 35%;
-  border-radius: 20px;
+.invest div .paddingLeft button {
+  width: 80px;
   outline: none;
+}
+table {
+  margin-bottom: 60px !important;
+}
+table thead tr th {
+  font-size: 16px;
+  color: #a5a2a2;
 }
