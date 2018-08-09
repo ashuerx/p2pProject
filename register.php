@@ -36,11 +36,7 @@
 				    <label for="mobile">手机号码</label>
 				    <input type="text" class="form-control" name="mobile" id="username" placeholder="请输入手机号码">
 				  </div>
-				 
-				  <!-- <div class="form-group">
-				    <label for="mobile">手机号码</label>
-				    <input type="text" class="form-control" name="mobile" id="mobile" placeholder="请输入手机">
-				  </div> -->
+				
 				  <div class="form-group">
 				    <label for="realname">用户姓名</label>
 				    <input type="text" class="form-control" name="realname" id="realname" placeholder="请输入姓名">
@@ -69,23 +65,7 @@
 			  </div>
 			</div>
 		</div>
-		
-		<!-- Button trigger modal -->
-			<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel">标题</h4>
-		      </div>
-		      <div class="modal-body">
-		             内容
-		      </div>
-		      
-		    </div>
-		  </div>
-		</div>
+
 
 		<!--底部-->
 		<?php
@@ -114,7 +94,8 @@
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <!--引入bootstrapvalidator文件-->
 <script src="./dist/javascript/bootstrapValidator.js"></script>
+<!-- 表单验证 -->
 <script src="./src/javascript/formValidator.js"></script>
-<!--引入z自定义register.js文件-->
-<!-- <script src="./src/js/register.js"></script> -->
+
+
 </html>

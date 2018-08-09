@@ -1,0 +1,11 @@
+$(function(){
+    $.get("api/checkState.php",function(result){
+        if(result.isSuccess){
+            $("#username").text(result.username);
+        }
+        else{
+            alert(result.msg);
+            location.href="login.php";
+        }
+    },"json");
+});
