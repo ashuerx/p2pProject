@@ -13,9 +13,9 @@
 
 <body>
 
-    <?php
-    include_once("./header.html");
-    ?>
+<?php
+include_once("./header.html");
+?>
         <!-- 轮播 -->
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->

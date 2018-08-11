@@ -39,6 +39,9 @@
 .panel form button {
   width: 160px;
 }
+.panel form .outline {
+  outline: none;
+}
 @media all and (max-width: 620px) {
   .panel form {
     width: 100%;

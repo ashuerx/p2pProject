@@ -237,5 +237,4 @@
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="./src/javascript/checkLogin.js"></script>
 
-
 </html>

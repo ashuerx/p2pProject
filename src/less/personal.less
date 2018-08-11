@@ -1,45 +1,33 @@
+
 //引入页头样式
 @import url("header.less");
 //左侧栏
 #person {
     margin-top: 5px;
-    //左边栏
-    //左边栏
-    #leftBox {
+  
+    .leftBox {
         #menu {
             .list-group-item {
                 padding: 0;
-                ul {
-                    li {
-                        padding: 0px 20px;
-                    }
-                    & li:hover {
-                        background: #337AB7;
-                        a {
-                            color: #fff;
-                        }
-                    }
-                }
-                li {
-                    line-height: 35px;
-                }
-                .aaa {
-                    width: 100%;
-                    line-height: 40px;
-                    display: inline-block;
-                    background: #EEE;
-                    padding-left: 10px;
-                    text-decoration: none;
+                padding: 0px 20px;
+                line-height: 35px;
+                & li:hover {
+                    background: #337AB7;
+                .bgcolor{
+                   background-colo:#ccc; 
+                   width: 100%;
+                   line-height: 40px;
+                   display: inline-block;
+                 
+                   padding-left: 10px;
+                   text-decoration: none;
+                   a {
+                    color: #fff;
                 }
             }
-        }
-        .list-group {
-            li {
-                line-height: 26px;
-            }
-        }
-    }
+        }}}}
     //右边的
+    
     #right {
         .el-account-info {
             text-align: left;
