@@ -1,42 +1,50 @@
+//引入页头样式 
+@import url("header.less");
 
-@import url('header.less');
-
-@import url('footer.less');
-//特色
-.flex{
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    .dflex{
-        display: flex;
-        padding: 0px;
-        margin-right:10px;
-        img{
-        // width: 70px;
-        height: 70px;
+//三大理财介绍
+#feature{
+    margin-top: 20px;
+    .row{
+        
+        div{
+            background: url("../../images/feature01.png") no-repeat left center;
+            min-height: 65px;
+            padding-left: 80px;
+            
+            h4{
+              font-weight: bold;  
+            }
         }
-       .padLeft{
-           margin-left: 10px;
-        h4{
-            font-weight: bold;
+        
+        div:nth-of-type(2){
+           background-image: url("../../images/feature02.png"); 
         }
-     
-     }
+        
+        div:nth-of-type(3){
+           background-image: url("../../images/feature03.png"); 
+        }
     }
 }
+
 //投资列表
 #invest,#article{
     padding-right: 0px;
     padding-left: 0px;
 }
 
-
-@media all and (max-width: 620px){
-    .hide620{
-        display: none;
+#invest{
+    table{
+        @media all and (max-width:620px){
+            .no{
+                display: none;
+            }
+        }
+        th{
+            height: 50px; 
+            line-height: 32px;
+        }
     }
 }
-
 //公共的panel
 .panel{
     -webkit-box-shadow:none;
@@ -55,28 +63,26 @@
         h1{
             font-size: 24px;
             margin-bottom: 0px;
-            padding-bottom: 10px;
-            color: rgb(67, 67, 245);
+           padding-bottom:10px;
+            color: @colorBlue;
             font-weight: bold;
-            border-bottom: 3px solid rgb(107, 107, 240);
+            border-bottom: 3px solid @colorBlue;
         }
         
         p{
-            margin: 0px;
-            padding: 0px;
-            line-height: 60px;
+            height:50px;
+            line-height: 65px;
+           
         }
     }
     
     .panel-body{
-        
+        padding: 15px 0px;
+   
         ul{
-            list-style: none;
-            padding: 0px;
-            margin: 0px;
             
             li{
-                line-height: 26px;
+                line-height: 40px;
                 border-bottom: dotted 1px #ccc;
                 
                 span{
@@ -87,4 +93,7 @@
         }
     }
 }
- 
+
+
+//页脚
+@import url("footer.less");

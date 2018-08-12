@@ -32,7 +32,7 @@
 								实名认证
 							</div>
 							<div class="panel-body">
-								<form id="autonym" method="post">
+								<form id="autonymForm" method="post">
 									<div class="form-group">
 										<label for="username">用户账号</label>
 										<input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名">
@@ -76,7 +76,7 @@
 									</div>
 									<div class="checkbox">
 										<label>
-										<input type="checkbox">
+										<input type="checkbox" name="isAgree">
 										同意协议 </label>
 									</div>
 									<button type="submit" class="btn btn-danger">
