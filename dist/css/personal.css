@@ -1,36 +1,53 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 .navbar {
   border-radius: 0px;
   margin-bottom: 0px;
 }
-.h80 {
-  height: 80px;
-}
-.h80 .lineH li a {
-  line-height: 48px;
-  font-size: 16px;
-}
-.h80 .lineH li a:hover {
-  color: #6161f3;
-  background: #eee;
-}
-.navbar-inverse .navbar-nav li a {
-  color: white;
-}
-.navbar-inverse .navbar-nav li a:hover {
-  color: #4f4ff5;
-}
 .navbar-inverse .navbar-brand {
-  color: white;
+  color: #fff;
+  font-size: 26px;
 }
 .navbar-inverse .navbar-brand span {
-  font-size: 24px;
-  font-style: italic;
-  padding-left: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #00a8ff;
+  text-decoration: underline;
+}
+.tooltip img {
+  max-width: 120px;
+}
+.navbar-default .navbar-nav > li > a {
+  line-height: 40px;
+  min-width: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #f0f0f0;
+}
+body {
+  overflow-x: hidden;
+}
+.in {
+  display: block;
+}
+.none {
+  display: none;
+}
+.in {
+  display: block;
+}
+.none {
+  display: none;
 }
 #person {
   margin-top: 5px;
@@ -61,6 +78,12 @@
 #person #leftBox .list-group li {
   line-height: 26px;
 }
+#person {
+  margin-top: 5px;
+}
+#person #right #toggleMenu {
+  display: none;
+}
 #person #right .el-account-info {
   text-align: left;
   border-bottom: 1px solid #ccc;
@@ -75,6 +98,28 @@
 }
 #person #right .end {
   margin: 25px 0;
+}
+@media all and (max-width: 768px) {
+  #person {
+    position: relative;
+    left: 0px;
+    min-height: 1000px;
+    transition: all 0.8s ease-in-out;
+  }
+  #person #leftBox {
+    position: absolute;
+    left: 0px;
+  }
+  #person #right {
+    position: absolute;
+    right: -50%;
+  }
+  #person #right #toggleMenu {
+    display: inline-block;
+  }
+  #person.active {
+    left: -50%;
+  }
 }
 .jumbotron {
   margin-bottom: 0;

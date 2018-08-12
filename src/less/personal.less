@@ -1,34 +1,32 @@
-
 //引入页头样式
 @import url("header.less");
-//左侧栏
+
+//去掉横向下划线
+body{
+    overflow-x: hidden;
+}
+//左侧栏显示和影藏
+.in{
+    display: block;
+}
+.none{
+    display: none;
+}
+
+//引入左侧样式
+ @import url("left.less");
+ 
+ 
 #person {
     margin-top: 5px;
-  
-    .leftBox {
-        #menu {
-            .list-group-item {
-                padding: 0;
-                padding: 0px 20px;
-                line-height: 35px;
-                & li:hover {
-                    background: #337AB7;
-                .bgcolor{
-                   background-colo:#ccc; 
-                   width: 100%;
-                   line-height: 40px;
-                   display: inline-block;
-                 
-                   padding-left: 10px;
-                   text-decoration: none;
-                   a {
-                    color: #fff;
-                }
-            }
-        }}}}
-    //右边的
+   
     
+    //右边的
     #right {
+        #toggleMenu{
+            display: none;
+        }
+        
         .el-account-info {
             text-align: left;
             border-bottom: 1px solid #ccc;
@@ -46,6 +44,40 @@
         }
     }
 }
+
+@media all and(max-width:768px){
+    
+    #person{
+        
+     position: relative;
+     left:0px;
+     min-height:1000px;
+     
+     transition: all 0.8s ease-in-out;
+            
+        #leftBox{
+            
+            position:absolute;
+            left:0px;
+        }
+        
+         #right{
+              position:absolute;
+              right:-50%;
+             
+             #toggleMenu{
+                 display: inline-block;
+             }
+           
+        }
+    }
+    
+    #person.active{
+        left: -50%;
+    }
+}
+
+
 
 //页脚
 @import url("footer.less");

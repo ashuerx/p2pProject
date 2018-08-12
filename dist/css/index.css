@@ -1,36 +1,38 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 .navbar {
   border-radius: 0px;
   margin-bottom: 0px;
 }
-.h80 {
-  height: 80px;
-}
-.h80 .lineH li a {
-  line-height: 48px;
-  font-size: 16px;
-}
-.h80 .lineH li a:hover {
-  color: #6161f3;
-  background: #eee;
-}
-.navbar-inverse .navbar-nav li a {
-  color: white;
-}
-.navbar-inverse .navbar-nav li a:hover {
-  color: #4f4ff5;
-}
 .navbar-inverse .navbar-brand {
-  color: white;
+  color: #fff;
+  font-size: 26px;
 }
 .navbar-inverse .navbar-brand span {
-  font-size: 24px;
-  font-style: italic;
-  padding-left: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #00a8ff;
+  text-decoration: underline;
+}
+.tooltip img {
+  max-width: 120px;
+}
+.navbar-default .navbar-nav > li > a {
+  line-height: 40px;
+  min-width: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #f0f0f0;
 }
 .jumbotron {
   margin-bottom: 0;

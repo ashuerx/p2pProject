@@ -37,7 +37,7 @@
 	
 		<!--底部-->
 		<?php
-    include_once("./footer.html");
+   			 include_once("./footer.html");
 		?>
 		
 			<!--注册成功或者失败的模态框-->

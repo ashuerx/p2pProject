@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.h80 {
+  height: 80px;
+}
+.h80 .lineH li a {
+  line-height: 48px;
+  font-size: 16px;
+}
+.h80 .lineH li a:hover {
+  color: #6161f3;
+  background: #eee;
+}
+.navbar-inverse .navbar-nav li a {
+  color: white;
+}
+.navbar-inverse .navbar-nav li a:hover {
+  color: #4f4ff5;
+}
+.navbar-inverse .navbar-brand {
+  color: white;
+  font-size: 24px;
+}
+.navbar-inverse .navbar-brand span {
+  font-size: 20px;
+  margin-right: 10px;
+}

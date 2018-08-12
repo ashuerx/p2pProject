@@ -128,49 +128,49 @@ $(function () {
         });
 });
 
-// 登录验证
-$(function () {
-    $('#loginform')
-        .bootstrapValidator({
-            message: 'This value is not valid',//表单出错的全局提示信息
-            feedbackIcons: {
-                valid: 'glyphicon glyphicon-ok',//通过
-                invalid: 'glyphicon glyphicon-remove',//失败
-                validating: 'glyphicon glyphicon-refresh'//正在验证
-            },
-            //需要验证的内容
-            fields: {
-                username: {
-                    message: '用户名验证失败',
-                    validators: {
-                        notEmpty: {
-                            message: '用户名不能为空'
-                        },
-                        stringLength: {
-                            min: 6,
-                            max: 18,
-                            message: '用户名长度必须在6-18之间'
-                        },
-
-                        regexp: {
-                            regexp: /^[a-zA-Z0-9_\.]+$/,
-                            message: 'The username can only consist of alphabetical, number, dot and underscore'
-                        }
-                    }
-                },
-                password1: {
-                    validators: {
-                        notEmpty: {
-                            message: '密码不能为空'
-                        },
-                        stringLength: {
-                            min: 6,
-                            message: '密码长度必须大于6位'
-                        },
-                    }
-                },
-            }
-        })
+			// 登录验证
+			
+			    $('#loginform')
+			        .bootstrapValidator({
+			            message: 'This value is not valid',//表单出错的全局提示信息
+			            feedbackIcons: {
+			                valid: 'glyphicon glyphicon-ok',//通过
+			                invalid: 'glyphicon glyphicon-remove',//失败
+			                validating: 'glyphicon glyphicon-refresh'//正在验证
+			            },
+			            //需要验证的内容
+			            fields: {
+			                username: {
+			                    message: '用户名验证失败',
+			                    validators: {
+			                        notEmpty: {
+			                            message: '用户名不能为空'
+			                        },
+			                        stringLength: {
+			                            min: 6,
+			                            max: 18,
+			                            message: '用户名长度必须在6-18之间'
+			                        },
+			
+			                        regexp: {
+			                            regexp: /^[a-zA-Z0-9_\.]+$/,
+			                            message: 'The username can only consist of alphabetical, number, dot and underscore'
+			                        }
+			                    }
+			                },
+			                password1: {
+			                    validators: {
+			                        notEmpty: {
+			                            message: '密码不能为空'
+			                        },
+			                        stringLength: {
+			                            min: 6,
+			                            message: '密码长度必须大于6位'
+			                        },
+			                    }
+			                },
+			            }
+			        })
 
 
         .on('success.form.bv', function (e) {
@@ -183,10 +183,10 @@ $(function () {
             // 使用ajax发送提交表单的数据请求
             var postUrl = "../../api/loginCheck.php";
             var postData = $form.serialize();
-            // console.log("发送的数据", postData);
+//             console.log("发送的数据", postData);
             // $.post("提交的url地址",对象形式或者字符串拼接的数据,callback回调函数, 数据返回的类型)
             $.post(postUrl, postData, function (result) {
-                // console.log("服务器返回结果", result);
+                   console.log("服务器返回结果", result);
                 //根据ajax返回的结果处理前端的业务逻辑
                 $("#regLoginModal .modal-title").text('用户注册提示');
                 if (result.isSuccess) {
@@ -210,6 +210,6 @@ $(function () {
                     console.log(result.msg);
                 }
             }, 'json');
-        });
+
 });
 

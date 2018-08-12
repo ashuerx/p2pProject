@@ -1,51 +1,66 @@
+@color:#fff;
+
 *{
-    margin:0;
-   padding:0;
-   list-style:none;
+    margin:0px;
+    padding:0px;
+    list-style: none;
 }
+
+@colorWhite:#fff;
+@colorBlue:#00a8ff;
+
+
+//辅助导航
 .navbar{
-    border-radius: 0px;
-    margin-bottom: 0px;
-   }
-   .h80{
-       height: 80px;
-     
-       .lineH{
-           li{
-             
-            a{
-                line-height: 48px;
-                font-size: 16px;
-              
-                &:hover{
-                   color:rgb(97, 97, 243);  
-                   background: #eee;
-                   }
-                
-               }
-           }
-           
-       }
-   }
-  
-    .navbar-inverse{
-    .navbar-nav{
-        li{
-           a{
-               color: white;
-               &:hover{
-                color:rgb(79, 79, 245); 
-                 }
-           }
+    border-radius:0px;
+    margin-bottom:0px;
+}
+.navbar-inverse{
+    .navbar-brand{
+        color: @colorWhite;
+        font-size: 26px;
+        
+        span{
+            font-size: 18px;
+            margin-right: 10px;
         }
     }
-    .navbar-brand{
-        color: white;
-        span{
-            font-size: 24px;
-            font-style: italic;
-            padding-left: 10px;
+    
+    .navbar-nav{
+        &>li{
+            &>a{
+                color:@colorWhite;
+                
+                &:hover{
+                    color: @colorBlue;
+                    text-decoration: underline;
+                }
+            }
         }
-       
-    } 
+    }
+}
+//副导航提示的图片
+.tooltip{
+    img{
+        max-width: 120px;
+    }
+}
+//主导航
+
+.navbar-default{
+
+    .navbar-nav{
+        &>li{
+            &>a{
+                line-height: 40px;
+                min-width: 80px;
+                font-size: 16px;
+                text-align: center;
+                
+                &:hover{
+                    background-color: #f0f0f0;
+                }
+            }
+        }
+    }
 }
