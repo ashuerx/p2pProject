@@ -29,7 +29,7 @@ include_once('./header.html');
                        <li>身份认证</li>
                        <li>视频认证</li>
                    </ul>
-                   <button type="button" class="btn btn-info borderRadius">立刻申请</button>
+                   <button type="button" class="btn btn-info borderRadius"><a href="./borrow_apply.php" class="colorW">立刻申请</a></button>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@ include_once('./header.html');
                        <li>身份认证</li>
                        <li>视频认证</li>
                    </ul>
-                   <button type="button" class="btn btn-info borderRadius">立刻申请</button>
+                   <button type="button" class="btn btn-info borderRadius"><a href="./borrow_apply.php" class="colorW">立刻申请</a></button>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@ include_once('./header.html');
                        <li>身份认证</li>
                        <li>视频认证</li>
                    </ul>
-                   <button type="button" class="btn btn-info borderRadius">立刻申请</button>
+                   <button type="button" class="btn btn-info borderRadius"><a href="./borrow_apply.php" class="colorW">立刻申请</a></button>
                 </div>
             </div>
         </div>
